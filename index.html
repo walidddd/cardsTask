@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+  </head>
+  <body>
+     <!--start nav-->
+    <div class="navx"></div><!--start section filtering-->
+    <section class="filtering">
+      <div class="container"> 
+        <div class="find-customers">
+          <div class="icone"> <img src="images/icones/Primary fill.svg" alt="" srcset=""></div>
+          <input type="search" name="customer" id="customer" placeholder="Find customers" onkeyup="filterCustomers()">
+        </div>
+        <div class="filter-name" onclick="showSort()">
+          <div class="title-select"> <span id="title-select">Filter by Name </span><img src="images/icones/sName.svg" alt="" srcset=""></div>
+          <div class="select" id="selected">
+            <ul> 
+              <li> 
+                <button class="sorting" value="(A-Z)" onclick="sort(value)">Name (A-Z)</button>
+              </li>
+              <li> 
+                <button class="sorting" value="(Z-A)" onclick="sort(value)">Name (Z-A)</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="cards">
+      <div class="container"> 
+        <div class="row" id="cards"></div>
+        <div class="alert-search d-none" id="alert"></div>
+      </div>
+    </section>
+    <script src="js/main.js"> </script>
+  </body>
+</html>

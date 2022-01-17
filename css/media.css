@@ -1,0 +1,132 @@
+@media (min-width: 1200px) {
+  .container,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl {
+    max-width: 1220px;
+  }
+
+  .cards .col {
+    width: 300px;
+  }
+
+  .cards .card .body-card {
+    padding: 25px 15px;
+  }
+  .cards .card .body-card .subtitle {
+    font-size: 14px;
+  }
+  .cards .card .body-card ul li {
+    font-size: 14px;
+  }
+}
+@media (min-width: 992px) {
+  .col-lg-3 {
+    flex: 0 0 auto;
+    width: 33%;
+  }
+}
+@media (min-width: 1400px) {
+  .container,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl {
+    max-width: 1370px;
+  }
+
+  .cards .col {
+    width: 340px;
+  }
+
+  .cards .card .body-card {
+    padding: 25px 25px;
+  }
+  .cards .card .body-card .subtitle {
+    font-size: 16px;
+  }
+  .cards .card .body-card ul li {
+    font-size: 15px;
+  }
+}
+@media (max-width: 800px) {
+  .container {
+    padding: 0px 23px;
+  }
+
+  /*media filtering*/
+  .filtering {
+    margin: 26px 0;
+  }
+  .filtering .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .filtering .container .find-customers {
+    width: auto;
+    margin-bottom: 40px;
+  }
+  .filtering .container .filter-name {
+    margin-left: auto;
+  }
+
+  /*media cards*/
+  .cards .card {
+    display: flex;
+    padding: 20px;
+    position: relative;
+    margin-bottom: 26px;
+  }
+  .cards .card .header-card {
+    position: absolute;
+    right: 19px;
+    width: 112px;
+    height: 112px;
+  }
+  .cards .card .header-card .hover button {
+    width: 40px;
+    height: 27px;
+    font-size: 11px;
+  }
+  .cards .card .body-card h4 {
+    font-size: 18px;
+  }
+  .cards .card .body-card h6 {
+    font-size: 13px;
+  }
+  .cards .card .body-card .subtitle {
+    font-size: 13px;
+    margin-bottom: 24px;
+    display: block;
+  }
+  .cards .card .body-card ul {
+    font-size: 13px;
+  }
+  .cards .card .body-card ul img {
+    margin: 4px 10px 0 0;
+  }
+}
+@media (max-width: 420px) {
+  .cards .card {
+    display: flex;
+    position: relative;
+    flex-direction: row-reverse;
+  }
+  .cards .card .body-card {
+    padding: 0px;
+  }
+  .cards .card .header-card {
+    position: relative;
+    width: 250px;
+    height: 112px;
+    right: 0;
+  }
+  .cards .card .body-card .subtitle {
+    font-size: 12px;
+    margin-bottom: 30px;
+  }
+}
+
+/*# sourceMappingURL=media.css.map */
