@@ -28,7 +28,7 @@ function toLoopDara(){
     `
     }
 }
-fetch('https://cardslex.netlify.app/js/api.json).then(response => response.json())
+fetch('../js/api.json').then(response => response.json())
 .then(customers => {
     data = customers
     toLoopDara()
